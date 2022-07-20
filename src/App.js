@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <div className="color-area">
         {[1, 2, 3].map((idx) => (
-          <select name={`color_${idx}`}>
+          <select name={`color_${idx}`} key={idx}>
             { colors.map((color) => (
-              <option value={color.value}>{color.label}</option>
+              <option value={color.value} key={color.value}>{color.label}</option>
             )) }
           </select>
         ))}
