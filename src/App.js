@@ -1,23 +1,20 @@
-import './App.css';
+import ColorDropDown from "./components/ColorDropdown";
+import "./App.css";
 
 const colors = [
-  { value: 'red', label: 'Red' },
-  { value: 'blue', label: 'Blue' },
-  { value: 'green', label: 'Green' },
-  { value: 'yellow', label: 'Yellow' },
-  { value: 'orange', label: 'Orange' },
-]
+  { value: "red", label: "Red", hex: "red" },
+  { value: "blue", label: "Blue", hex: "blue" },
+  { value: "green", label: "Green", hex: "green" },
+  { value: "yellow", label: "Yellow", hex: "yellow" },
+  { value: "orange", label: "Orange", hex: "orange" },
+];
 
 function App() {
   return (
     <div className="App">
       <div className="color-area">
         {[1, 2, 3].map((idx) => (
-          <select name={`color_${idx}`} key={idx}>
-            { colors.map((color) => (
-              <option value={color.value} key={color.value}>{color.label}</option>
-            )) }
-          </select>
+          <ColorDropDown colors={colors} key={idx} />
         ))}
       </div>
       <div className="container">

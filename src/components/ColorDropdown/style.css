@@ -1,0 +1,64 @@
+.color-picker {
+  min-width: 3in;
+  min-height: 3in;
+  width: 28%;
+  height: 100%;
+}
+
+.wrapper-dropdown {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  color: #2e2e2e;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper-dropdown>span {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ababab;
+  font-size: 30px;
+}
+
+.wrapper-dropdown>span>span {
+  padding: 0 12px;
+  margin-right: 5px;
+}
+
+.wrapper-dropdown .dropdown {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  font-weight: normal;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  border: 1px solid #ababab;
+  border-top: 0;
+}
+
+.wrapper-dropdown .dropdown li {
+  display: block;
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.wrapper-dropdown .dropdown li>span {
+  padding: 0 12px;
+  margin-right: 5px;
+}
+
+.wrapper-dropdown .dropdown li:hover {
+  background: #eee;
+  cursor: pointer;
+}

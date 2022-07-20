@@ -15,14 +15,6 @@
   margin-bottom: 20px;
 }
 
-.App .color-area select {
-  min-width: 3in;
-  min-height: 3in;
-  font-size: 0.5in;
-  width: 28%;
-  height: 100%;
-}
-
 .App .container {
   width: 100%;
   height: calc(56% - 20px);
